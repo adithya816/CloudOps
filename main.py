@@ -12,6 +12,11 @@ def home():
 def health():
     return jsonify({"status": "UP"}), 200
 
+@app.route('/info')
+def info():
+    return "CloudOps Primary Branch Version"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
+
